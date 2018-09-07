@@ -13,6 +13,8 @@
 		E38FBFB0212C5F4300E90AD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E38FBFAE212C5F4300E90AD6 /* LaunchScreen.storyboard */; };
 		E38FBFB8212C65F600E90AD6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38FBFB7212C65F600E90AD6 /* ProfileViewController.swift */; };
 		E38FBFBA212C660A00E90AD6 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E38FBFB9212C660A00E90AD6 /* EditViewController.swift */; };
+		E3A5E9732142075C004DE381 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A5E9722142075C004DE381 /* UIButton+Extension.swift */; };
+		E3A5E975214209D5004DE381 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A5E974214209D5004DE381 /* UILabel+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E38FBFB1212C5F4300E90AD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E38FBFB7212C65F600E90AD6 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E38FBFB9212C660A00E90AD6 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		E3A5E9722142075C004DE381 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		E3A5E974214209D5004DE381 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				E38FBFB1212C5F4300E90AD6 /* Info.plist */,
 				E38FBFB7212C65F600E90AD6 /* ProfileViewController.swift */,
 				E38FBFB9212C660A00E90AD6 /* EditViewController.swift */,
+				E3A5E9722142075C004DE381 /* UIButton+Extension.swift */,
+				E3A5E974214209D5004DE381 /* UILabel+Extension.swift */,
 			);
 			path = HW_18_Delegate;
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E38FBFB8212C65F600E90AD6 /* ProfileViewController.swift in Sources */,
+				E3A5E9732142075C004DE381 /* UIButton+Extension.swift in Sources */,
+				E3A5E975214209D5004DE381 /* UILabel+Extension.swift in Sources */,
 				E38FBFA6212C5F3200E90AD6 /* AppDelegate.swift in Sources */,
 				E38FBFBA212C660A00E90AD6 /* EditViewController.swift in Sources */,
 			);

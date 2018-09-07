@@ -10,26 +10,45 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet private weak var nameLabel: UILabel!
+    @IBOutlet private weak var lastnameLabel: UILabel!
+    @IBOutlet private weak var editButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        title = "Profile"
+        roundedUIElements()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    private func roundedUIElements() {
+        nameLabel.rounded(radius: 5.0)
+        lastnameLabel.rounded(radius: 5.0)
+        editButton.rounded(radius: 15.0)
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+// MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        guard segue.identifier == "EditVC" else { return }
+        guard let editVC = segue.destination as? EditViewController else { return }
+        editVC.delegate = self
+        editVC.name = nameLabel.text ?? ""
+        editVC.lastname = lastnameLabel.text ?? ""
     }
-    */
-
 }
+
+// MARK: - EditProfileDelegate
+
+extension ProfileViewController: EditProfileDelegate {
+    func userDidChange(firstname: String, lastname: String) {
+        nameLabel.text = firstname
+        lastnameLabel.text = lastname
+    }
+
+    func userDidResetInfo() {
+        nameLabel.text = ""
+        lastnameLabel.text = ""
+    }
+}
+
+
+
